@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+
+	<p th:text="${hoge}">addAttributeしてないね</p>
+
+	<div>
+		<form>
+			<span th:text="${value}" />
+			<textarea rows="3" cols="80" />
+			<input type="submit" value="送信" />
+		</form>
+	</div>
+
+	<tr th:each="testMap : ${testMap}">
+		<td th:text = "${testMap.key}">key</td>
+		<td th:text = "${testMap.value}">value</td>
+		
+	</tr>
+</body>
+</html>
