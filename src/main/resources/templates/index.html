@@ -3,21 +3,18 @@
 <head>
 </head>
 <body>
-
-	<p th:text="${hoge}">addAttributeしてないね</p>
-
 	<div>
-		<form>
-			<span th:text="${value}" />
-			<textarea rows="3" cols="80" />
-			<input type="submit" value="送信" />
+	<!-- /** th:objectに使いたいクラスのインスタンスをキャメルケースで記述する　ここでオブジェクトを宣言する **/ -->
+		<form action="/register.html" th:action="@{/}"
+			th:object="${echoForm}" method="POST">
+			<div>ID入力してね</div>
+			<div>
+				<input type="text" th:field="*{id}" /><br />
+			</div>
+			<div>
+				<button type="submit">送信</button>
+			</div>
 		</form>
 	</div>
-
-	<tr th:each="testMap : ${testMap}">
-		<td th:text = "${testMap.key}">key</td>
-		<td th:text = "${testMap.value}">value</td>
-		
-	</tr>
 </body>
 </html>

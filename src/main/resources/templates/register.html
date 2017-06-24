@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Result</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Result</h1>
+	<div>
+		「<span th:text="*{echoForm.text}">ここに入力された値が出る</span>」 <br />
+	</div>
+	<a href="./index.html" th:href="@{/}">戻る</a>
+</body>
+</html>
