@@ -2,16 +2,12 @@ package com.example.demo;
 
 import java.io.Serializable;
 
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
-public class EchoForm implements Serializable{
-	
-	/**
-	 * 
-	 */
+public class MemberRegistration implements Serializable{
+
 	private static final long serialVersionUID = 1L;
 	@NotEmpty
 	@Size(min = 4, max = 10)

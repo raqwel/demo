@@ -6,7 +6,7 @@
 	<div>
 	<!-- /** th:objectに使いたいクラスのインスタンスをキャメルケースで記述する　ここでオブジェクトを宣言する **/ -->
 		<form action="/register.html" th:action="@{/}"
-			th:object="${echoForm}" method="POST">
+			th:object="${memberRegistration}" method="POST">
 			<div>ユーザ名入力してね</div>
 			<div>
 				<input type="text" th:field="*{id}" th:required = "required"/><br />
